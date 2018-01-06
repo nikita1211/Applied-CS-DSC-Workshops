@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/rucha/AndroidStudioProjects/Menus/app/build/intermediates/res/merged/debug/menu/menu_output.xml",
+        "source": "/home/rucha/AndroidStudioProjects/Menus/app/src/main/res/menu/menu_output.xml"
+    },
+    {
+        "merged": "/home/rucha/AndroidStudioProjects/Menus/app/build/intermediates/res/merged/debug/menu/menu_floating.xml",
+        "source": "/home/rucha/AndroidStudioProjects/Menus/app/src/main/res/menu/menu_floating.xml"
+    },
+    {
+        "merged": "/home/rucha/AndroidStudioProjects/Menus/app/build/intermediates/res/merged/debug/menu/menu_floating2.xml",
+        "source": "/home/rucha/AndroidStudioProjects/Menus/app/src/main/res/menu/menu_floating2.xml"
+    },
+    {
+        "merged": "/home/rucha/AndroidStudioProjects/Menus/app/build/intermediates/res/merged/debug/menu/menu_contextbar.xml",
+        "source": "/home/rucha/AndroidStudioProjects/Menus/app/src/main/res/menu/menu_contextbar.xml"
+    }
+]
