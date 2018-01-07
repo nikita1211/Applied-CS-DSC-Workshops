@@ -4,11 +4,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,10 +27,21 @@ public class MainActivity extends AppCompatActivity {
     public boolean userTurn = true; // user always starts the game
     public boolean gameOver = false;
 
+   /* private static int diceFaces[] = {
+            R.drawable.dice1,
+            R.drawable.dice2,
+            R.drawable.dice3,
+            R.drawable.dice4,
+            R.drawable.dice5,
+            R.drawable.dice6
+    };*/
+
     //Declare Id variables to associate them with xml declared widgets
     Button rollBt,holdBt,resetBt;
     ImageView diceImg;
     TextView winVw,actionVw,scoreVw,tempscoreVw,holdVw;
+    Animation anim1,anim2;
+    Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
         //holdVw = (TextView) findViewById(R.id.holdText);
 
         winVw.setVisibility(View.INVISIBLE);
+
+        anim1 = new TranslateAnimation(0.0f,200.0f,0.0f,0.0f);
+        anim2 = new TranslateAnimation(0.0f,-200.0f,0.0f,0.0f);
+        anim1.setDuration(200);
+        anim2.setDuration(200);
+
 
         rollBt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +91,8 @@ public class MainActivity extends AppCompatActivity {
     public void roll() {
         Random random = new Random();
         currentDiceValue = random.nextInt((MAX_DICE_VALUE - MIN_DICE_VALUE) + 1) + MIN_DICE_VALUE;
-
+        //diceImg.setImageResource(diceFaces[currentDiceValue]);
+        diceImg.setAnimation(anim1);
         if(currentDiceValue == 1)
         {
             diceImg.setImageResource(R.drawable.dice1);
@@ -99,8 +120,13 @@ public class MainActivity extends AppCompatActivity {
 
         if(currentDiceValue != 1)
         {
+            if(userTurn){
             userTurnScore+=currentDiceValue;
-            updateTurnScore(userTurnScore);
+            updateTurnScore(userTurnScore);}
+            else{
+                compTurnScore+=currentDiceValue;
+                updateTurnScore(compTurnScore);
+            }
         }
         else
         {
@@ -152,7 +178,11 @@ public class MainActivity extends AppCompatActivity {
             actionVw.setText("Computer's Turn");
             userTurn = !userTurn;
         }
-        else actionVw.setText("Your Turn");
+        else
+        {
+            actionVw.setText("Your Turn");
+            userTurn = true;
+        }
 
         if (userTurn) {
             rollBt.setEnabled(true);
@@ -170,14 +200,18 @@ public class MainActivity extends AppCompatActivity {
 
     public void computerTurn()
     {
-        rollBt.setEnabled(false);
-        holdBt.setEnabled(false);
-
-        while((compTurnScore + compOverallScore >= WINNING_SCORE) || (compTurnScore >= MAX_COMP_TURN_SCORE))
-        {
-            roll();
+        if (!userTurn) {
+            if (compTurnScore < 20) {
+                roll();
+                new android.os.Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        computerTurn();
+                    }
+                },1000);
+            } else
+                hold();
         }
-
     }
 
     public void reset() {
