@@ -1,4 +1,9 @@
 -Watch the Scarne's Dice game video at:
 https://www.youtube.com/watch?v=r65MpuDkbh0
 
--Import Starter code provided in the repo, try to write the xml code for the activity shown in the video (It consists of a Text View, An Image View and three Buttons in linear layout oriented Vertically. The dice images are present in Drawable Folder in resources) using the Starter Code and be ready for session on 21st Jan :)
+-Import Starter code provided in the repo, try to write the xml code for the activity shown in the video
+(It consists of a Text View, An Image View and three Buttons in linear layout oriented Vertically. 
+The dice images are present in Drawable Folder in resources) using the Starter Code and be ready for session on 21st Jan :)
+
+-For those who haven't installed Android Studio :
+ 	Get your problems sorted using stack overflow to be ready for session on 21st Jan :)
