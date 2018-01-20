@@ -1,2 +1,9 @@
 # Applied-CS-DSC-Workshops
-This page consists of all demos and apps covered in workshops conducted under Applied CS and DSC program
+This repo consists of Session wise demos and apps covered, also Notes include some more references to what we have learnt and To-Dos include some home work for  you to try. Other general references will be updated here in the Readme itself.
+
+
+---REFERENCES---
+
+1)This is a  course for studying the basics of Java to understand coding in Android further.
+Here is the link to the Java course
+https://in.udacity.com/course/java-programming-basics--ud282
