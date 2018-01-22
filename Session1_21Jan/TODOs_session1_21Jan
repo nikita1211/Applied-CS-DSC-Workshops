@@ -1,3 +1,4 @@
-1.
-	Read about Pickers in Android and try to implement them from :
-	https://developer.android.com/guide/topics/ui/controls/pickers.html
+-Read about Pickers in Android and try to implement them from :
+https://developer.android.com/guide/topics/ui/controls/pickers.html
+
+-Try to implement UI for Scarne's Dice app using Relative Layout.(3 buttons(done), 1 image view, 3/4 text views/1toast as you like). The dice images are present in drawable folder of resources.
