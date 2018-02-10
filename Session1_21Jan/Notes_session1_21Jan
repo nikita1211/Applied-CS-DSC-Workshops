@@ -1,0 +1,8 @@
+- Today we covered User Interface Input Controls like Buttons, Edit Texts, Radio Buttons, Checkboxes etc. 
+   The ppts for these views are uploaded in the 'Ppts' folder.
+
+- To read about intents, refer to :
+  https://developer.android.com/reference/android/content/Intent.html
+  Specifically, read about implicit intents.
+
+
