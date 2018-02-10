@@ -2,3 +2,5 @@ NOTES:
 1) Handlers theory:
 	https://developer.android.com/reference/android/os/Handler.html
 	https://medium.com/@ankit.sinhal/handler-in-android-d138c1f4980e
+
+2) Try out Basic Transition animations from: https://developer.android.com/training/transitions/index.html
