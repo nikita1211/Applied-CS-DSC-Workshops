@@ -3,3 +3,6 @@ NOTES:
 	https://developer.android.com/reference/android/os/Handler.html
 	https://medium.com/@ankit.sinhal/handler-in-android-d138c1f4980e
 
+
+Music Player with Recycler View
+https://drive.google.com/open?id=1MO1jhDM_2o9SnIKgsuBbLekZUL73DzDK
