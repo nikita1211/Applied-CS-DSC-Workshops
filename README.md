@@ -14,4 +14,6 @@ https://in.udacity.com/course/java-programming-basics--ud282
 
 4) To start with Python : https://developers.google.com/edu/python/  and   https://docs.python.org/2/tutorial/
 
+5) Attend GDG Pune sessions every month : https://www.meetup.com/Pune-GDG/
+   Also for discussion their slack channel is : https://gdg-pune.slack.com/
 
