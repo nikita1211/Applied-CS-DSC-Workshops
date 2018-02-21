@@ -16,4 +16,6 @@ https://in.udacity.com/course/java-programming-basics--ud282
 
 5) Attend GDG Pune sessions every month : https://www.meetup.com/Pune-GDG/
    Also for discussion their slack channel is : https://gdg-pune.slack.com/
+   
+6) Link to Associate Android Developer Examination page : https://developers.google.com/training/certification/associate-android-developer/
 
