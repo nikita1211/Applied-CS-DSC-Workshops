@@ -19,3 +19,5 @@ https://in.udacity.com/course/java-programming-basics--ud282
    
 6) Link to Associate Android Developer Examination page : https://developers.google.com/training/certification/associate-android-developer/
 
+7) Interesting Video on Firebase : https://www.youtube.com/watch?v=VTkM5BbnslU&t=942s
+   Useful tutorial to get started with firebase : https://in.udacity.com/course/firebase-in-a-weekend-by-google-android--ud0352
